@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Quizzes</title>
+
+        <link rel="stylesheet" type="text/css" href="assets/css/site.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/front.css">
+
+    </head>
+
+    <body>
+
+        <div class="github-quizzes">
+
+            <header id="gq-header">
+
+                <div class="gq-header--wrap">
+
+                    <h1>Quizzes markup</h1>
+
+                    <h2>You can choose between <strong>knowledge</strong> quiz and <strong>no-wrong answer</strong> quiz.</h2>
+
+                    <h2>For both cases you have two ways to display answers: <strong>list</strong> and <strong>grid</strong>.</h2>
+
+                </div>
+
+            </header>
+
+            <section id="gq-section">
+
+                <div id="gq-section--settings">
+
+                    <ul class="gq-quiz--type">
+
+                        <li><a href="#gq-knowledge">Knowledge Quiz</a></li>
+
+                        <li><a href="#gq-nowrong">No-Wrong Answer Quiz</a></li>
+
+                    </ul>
+
+                    <ul class="gq-quiz--design">
+
+                        <li><input type="radio" name="gq-design" value="list" title="List" id="gq-quiz--list" />
+                        <label for="gq-quiz--list" aria-hidden="true">List</label></li>
+
+                        <li><input type="radio" name="gq-design" value="grid" title="Grid" id="gq-quiz--grid" checked="checked" />
+                        <label for="gq-quiz--grid" aria-hidden="true">Grid</label></li>
+
+                    </ul>
+
+                </div>
+
+                <div id="gq-knowledge" class="gq-content">
+
+                    <div class="forminator-quiz forminator-design--grid">
+
+                        <div class="forminator-quiz--header">
+
+                            <p class="forminator-quiz--title">Who tweeted it: Donald Trump or Kanye West?</p>
+
+                            <figure class="forminator-quiz--image">
+                                
+                                <img src="http://i.cdn.turner.com/cnn/interactive/2016/02/politics/trump-kanye-who-tweeted/media/header-trump-kanye.png" alt="West or Trump" />
+
+                            </figure>
+
+                            <p class="forminator-quiz--description">Between the random Twitter rants and the not-so-subtle subtweets, the similarities between these two moguls are closer than you might think. Take our quiz and find out if you can tell the difference between Donald Trump and Kanye West on Twitter.</p>
+
+                        </div>
+
+                        <div class="forminator-question">
+
+                            <p class="forminator-question--title">I have never seen a thin person drinking Diet Coke.</p>
+
+                            <div class="forminator-question--answers">
+
+                                <div class="forminator-answer">
+
+                                    <input type="radio" name="fq-knowledge" value="0" id="fqk-q1-a1" class="forminator-answer--input" />
+
+                                    <label class="forminator-answer--design" for="fqk-q1-a1">
+
+                                        <span class="forminator-answer--image" style="background-image: url('http://cdn.cnn.com/cnnnext/dam/assets/161107120239-01-trump-parry-super-169.jpg');"></span>
+
+                                        <span class="forminator-answer--text">Trump</span>
+
+                                    </label>
+
+                                </div>
+
+                                <div class="forminator-answer">
+
+                                    <input type="radio" name="fq-knowledge" value="0" id="fqk-q1-a2" class="forminator-answer--input" />
+
+                                    <label class="forminator-answer--design" for="fqk-q1-a2">
+
+                                        <span class="forminator-answer--image" style="background-image: url('http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/12/GettyImages-475567598_kanye_mental_health_hospital_new_hair_630.jpg');"></span>
+
+                                        <span class="forminator-answer--text">Kanye</span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="forminator-question--result"></div>
+
+                        </div>
+
+                        <div class="forminator-footer"></div>
+
+                    </div>
+
+                </div>
+
+                <div id="gq-nowrong" class="gq-content">No wrong quiz</div>
+
+            </section>
+
+        </div>
+
+        <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="assets/js/settings.js"></script>
+
+    </body>
+
+</html>
